@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Narrow, Arial, sans-serif";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color:#ffffff;
+    text-transform:uppercase;
+
+    background-color: black;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus,
+a:hover {
+    text-shadow: khaki;
+    background-color: #242424;
+}
+
+.button {
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    color: #ffffff;
+    font: inherit;
+    font-size: inherit;
+
+    background-color: #000000;
+    border: none;
+}
+
+button:hover,
+button:focus,
+button:active {
+    text-shadow: khaki;
+    background-color: #242424;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 20px;
+    background-color: rgba(116, 124, 116, 0.067);
+}
+
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
+.main h1 {
+    visibility: hidden;
+}
+
+.features h2 {
+    visibility: hidden;
+}
+
+.feature-list {
+    text-align: center;
+    list-style: none;
+}
+
+.feature-list h3 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.index-columns {
+    background-color: lavender;
+    color: #000000
+}
+.news-list {
+    list-style: none;
+}
+.news-list time {
+    text-transform: capitalize;
+}
+
+.gallery-pics {
+
+    border: 7px solid #ffffff;
+    background-color: #cccccc;
+}
+.appointment-entry input{
+
+    font: inherit;
+    font-size: inherit;
+    border: 2px solid #000000;
+    background-color: transparent;
+}
+
+.appointment-entry input:focus,
+.appointment-entry input:hover {
+    border-color: #663d13;
+}
+
+.main-footer {
+    background-color: #212121;
+}
+.footer-contacts a{
+    text-decoration: underline;
+}
+.footer-contacts a:hover,
+.footer-contacts a:focus{
+    text-decoration: none;
+}
+.footer-social {
+    text-align: center;
+}
+.footer-social ul{
+    list-style: none;
+
+}
+.footer-social a{
+    background-color: #000000;
+}
+.footer-social a:hover,
+.footer-social a:focus {
+    background-color: #212121;
+}
+
+.footer-developer{
+    text-align: center
+}
+
+.footer-developer .button:focus,
+.footer-developer .button:hover{
+    background-color: #ffffff;
+    color: #000000
+}

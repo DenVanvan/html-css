@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang = 'ru'>
+    <head>
+        <meta charset="utf-8">
+        <title>Барбершоп "Бородинский"</title>
+        <link href = 'https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700;subset=latin,cyrillic'
+        rel = 'stylesheet'>
+        <link href = "../static/normalize.css" rel = 'stylesheet'>
+        <link href = "../static/main.css" rel='stylesheet'>
+        
+    </head>
+    <body>
+        <header>
+            <nav class='main-navigation'>
+                <a class = 'index-logo'>
+                    <img src='img\index-logo.svg' width="368" height = '153' alt='Логотип'>
+                </a>
+                <ul class = 'site-navigation'>
+                    <li class="navigation-item"><a href = 'info.html'>Информация</a></li>
+                    <li class="navigation-item"><a href = 'news.html'>Новости</a></li>
+                    <li class="navigation-item"><a href = 'price.html'>Прайс-Лист</a></li>
+                    <li class="navigation-item"><a href = 'store.html'>Магазин</a></li>
+                    <li class="navigation-item"><a href = 'contacts.html'>Контакты</a></li>
+                    
+                </ul>
+                <ul class= 'user-navigation'>
+                    <li class="navigation-item"><button class='button' type = 'button'>Войти</button></li>
+                </ul>
+            </nav>
+        </header>
+        <main class = 'main'>
+            <h1>Барбершоп "Бородинский"</h1>
+            <section class = 'features'>
+                <h2>Преимущества</h2>
+                <ul class= 'feature-list'>
+                    <li>
+                        <h3>Быстро</h3>
+                        <p>Быстрее всех</p>
+                    </li>
+                    <li>
+                        <h3>Круто</h3>
+                        <p>Как звезда кино</p>
+                    </li>
+                    <li>
+                        <h3>Дорого</h3>
+                        <p>Цена - это статус</p>
+                    </li>
+                </ul>
+            </section>
+            <div class='index-columns'>
+                <section class = 'news'>
+                    <h2>Новости</h2>
+                    <ul class = 'news-list'>
+                        <li>
+                            <p>Мы завезли Ягермейстер!</p>
+                            <time datetime = '2021-09-21'>21 сентября 2021</time>
+                        </li>
+                        <li>
+                            <p>К нам присоединился Борис "Бритва" Чумазый</p>
+                            <time datetime = '2021-09-01'>1 сентября 2021</time>
+                        </li>
+                    </ul>
+                    <a class="button" href = 'news.html'>Все новости</a>
+                </section>
+                <section class='gallery'>
+                    <h2>Фотогалерея</h2>
+                    <figure class = 'gallery-pics'> 
+                        <a href = #>
+                            <img src = 'img/index-logo.svg' width="368" height="153" alt='Фото интерьера'>
+                        </a>
+                    </figure>
+                    <button class='button' type="button">Назад</button>
+                    <button class='button' type="button">Вперед</button>
+                </section>
+            </div>
+            <div class="index-columns">
+                <section class='contacts'>
+                    <h2>Контактная информация</h2>
+                    <p>
+                        Барбершоп "Бородинский"<br>
+                    Адрес: г. Питер, ул. Большая Конюшенная 17/1<br>
+                    Телефон: +7 812 666 66 20
+                    </p>
+
+                    <p>
+                        Время Работы:<br>
+                        ПН-ПТ: С 10.00 до 22.00<br>
+                        СБ-ВС: С 10.00 до 19.00<br> 
+                    </p>
+                    <a class='button' href='map.html'>Как проехать</a>
+                    <a class='button' href='contacts.html'>Связаться с нами</a>
+                </section class = 'appointment'>
+                <section>
+                    <h2>Записаться</h2>
+                    <p>Укадите желаемую дату</p>
+                    <form method="POST" action="https://echo.htmlacademy.ru">
+                            <p class='appointment-entry'>
+                                <label for = user_date>Дата</label>
+                                <input id= 'user_date' type="date"
+                                 name = input_date value = '2021-09-01' required>
+                            </p>
+                            <p class='appointment-entry'>
+                                <label for= 'user_time'>Время</label>
+                                <input id='user_time' type="time"
+                                name = input_time value = '10:00:00' required>
+                            </p>
+                            <p class='appointment-entry'>
+                                <label for= 'user_name'>Ваше имя</label>
+                                <input id = 'user_name' type="text" placeholder = 'Борода' 
+                                name = input_name required>
+                            </p>
+                            <p class='appointment-entry'>
+                                <label for= 'user_tel'>Ваш телефон</label>
+                                <input id = 'user_tel'type="tel" placeholder = '+7-123-456-78-90' 
+                                name = input_tel required>
+                            </p>
+                        <button class='button' type='submit'>Отправить</button>
+                    </form>
+                </section>
+            </div>        
+        </main>
+        <footer class = 'main-footer'>
+            <p class='footer-contacts'>Барбершоп "Бородинский"<br>
+                Адрес: г.Питер, ул. Большая Конюшенная 17/1<br>
+                <a href = 'contacts.html'>Как нас найти</a><br>
+                Телефон: +7 812 666 66 20
+            </p>
+            <div class = 'footer-social'>
+                <p>Давайте дружить</p>
+                <ul>
+                    <li>
+                        <a class='button' href = 'http://www.facebook.com'>
+                            <img src='img/facebook.svg' width="20" height="20" alt = 'Иконка Фейсбук'>
+                        </a>
+                    </li>
+                    <li>
+                        <a class='button' href = 'http://www.vk.com'>
+                            <img src='img/vk.svg' width="20" height="20" alt = 'Иконка ВК'>
+                        </a>
+                    </li>
+                    <li>
+                        <a class='button' href = 'http://www.instagramm.com'>
+                            <img src='img/instagram.svg' width="20" height="20" alt = 'Иконка Инстаргам'>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class = 'footer-developer'>
+                Разработано:<br>
+                <a class='button' href='htmlacademy.ru'>HTML Academy</a>
+            </p>
+        </footer>
+        <section>
+            <h2>Личный кабинет</h2>
+            <p>Ввелите свой логин и пароль</p>
+            <form method="POST" action="https://echo.htmlacademy.ru">
+                <p>
+                    <label for ='user_login'>Логин</label>
+                    <input type="email" id='user_login' placeholder="email@example.com" name='login_name' required>
+                </p>
+                <p>
+                    <label for = 'user_pass'>Пароль</label>
+                    <input type='password' placeholder="Password" name="password" id='user_pass' required>
+                </p>
+                <p>
+                    <label>
+                        <input type = 'checkbox' name=remember>
+                        Запомните меня
+                    </label> 
+                </p>            
+                <button class='button' type="submit">Войти</button>
+            </form>
+            <button class='button' type="button">Закрыть</button>
+        </section>
+        <section>
+            <h2>Как до нас добраться</h2>
+            <button class='button' type="button">Закрыть</button>            
+        </section>    
+    </body>
+</html>

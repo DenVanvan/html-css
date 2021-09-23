@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang = 'ru'>
+    <head>
+        <meta charset = 'utf-8'>
+        <title>Магазин</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href = 'index.html'>
+                    <img src='index-logo.svg' width = '368' height="250">
+                </a>
+                <ul>
+                    <li><a href= 'info.html'>Информация</a> </li>
+                    <li><a href = 'news.html'>Новости</a></li>
+                    <li><a href = 'price.html'>Прайс-Лист</a></li>
+                    <li><a href = '#'>Магазин</a></li>
+                    <li><a href = 'contacts.html'>Контакты</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <button type="button">Войти</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Магазин</h1>
+            <section>
+                <h2>Каталог</h2>
+                <form method="get" action = 'https://echo.htmlacademy.ru'>
+                    <fieldset>
+                        <legend>Произволители</legend>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id='baxter_filter' name = 'baxter' checked>
+                                <label for = 'baxter_filter'>Baxter of California</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id='mrnatty_filter' name = 'mrnatty'>
+                                <label for = 'mrnatty_filter'>Mr. Natty</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id='suavecito_filter' name = 'suavecito'>
+                                <label for = 'suacecito_filter'>Suavecito</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Категории товаров</legend>
+                        <ul>
+                            <li>
+                                <input type='radio' id='shaving_acc' name = 'product_type' value = 'shaving'>
+                                <label for = 'shaving_acc'>Бритвенные принадлежности</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='caring_means' name = 'product_type' value = 'caring' checked>
+                                <label for = 'caring'>Товары для ухода</label>
+                            </li>
+                            <li>
+                                <input type='radio' id='accesoirs' name = 'product_type' value = 'acces'>
+                                <label for = 'accesoirs'>Товары для ухода</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit">Показать</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Барбершоп "Бородинский"<br>
+                Адрес: г.Питер, ул. Большая Конюшенная 17/1<br>
+                <a href = 'contacts.html'>Как нас найти</a><br>
+                Телефон: +7 812 666 66 20
+            </p>
+            <div>
+                <p>Давайте дружить</p>
+                <ul>
+                    <li>
+                        <a href = 'http://www.facebook.com'>
+                            <img src='img/facebook.svg' width="20" height="20" alt = 'Иконка Фейсбук'>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = 'http://www.vk.com'>
+                            <img src='img/vk.svg' width="20" height="20" alt = 'Иконка ВК'>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = 'http://www.instagramm.com'>
+                            <img src='img/instagram.svg' width="20" height="20" alt = 'Иконка Инстаргам'>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>
+                Разработано:<br>
+                <a href='http://www.htmlacademy.ru'>HTML Academy</a>               
+            </p>
+        </footer>
+        <section>
+            <h2>Личный кабинет</h2>
+            <form method="POST" action="https://echo.htmlacademy.ru">
+                <p>
+                    <label for= 'user_login'>Логин</label>
+                    <input id= 'user_login' type=text placeholder="Login name" name = 'login_name' required>
+                </p>
+                <p>
+                    <label for="user_pass">Пароль</label>
+                    <input id='user_pass' type="password" placeholder="Password" name = 'password' required>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" name='remember'>
+                        Запомните меня
+                    </label>
+                </p>    
+                <button type="submit">Войти</button>
+            </form>
+            <button type= 'button'>Закрыть</button>
+        </section>
+    </body>
+</html>
